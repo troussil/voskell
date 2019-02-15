@@ -1,10 +1,10 @@
 name:                voskell
 version:             0.1.0.0
-github:              "yourusername/voskell"
+github:              "troussil/voskell"
 license:             BSD3
-author:              "Your Name"
-maintainer:          "youremail@example.com"
-copyright:           "Copyright (c) 2018 Your Name"
+author:              "Tristan Roussillon"
+maintainer:          "tristan.roussillon@liris.cnrs.fr"
+copyright:           "Copyright (c) 2019 Tristan Roussillon"
 
 extra-source-files:
 - README.md
@@ -12,7 +12,7 @@ extra-source-files:
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
-# category:            Your Projects Category
+# category:            Digital geometry
 
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
@@ -37,8 +37,8 @@ executables:
     - voskell
 
 tests:
-  voskell-test:
-    main:                Spec.hs
+  voskell-tests:
+    main: Main.hs
     source-dirs:         test
     ghc-options:
     - -threaded
@@ -46,3 +46,4 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - voskell
+    - QuickCheck
